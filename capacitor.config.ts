@@ -4,7 +4,9 @@ const config: CapacitorConfig = {
   appName: 'Cent',
   webDir: 'dist',
   plugins: {
-    BackgroundAudio: { enable: true }
+    BackgroundAudio: {
+      enable: true
+    }
   }
 };
 export default config;
