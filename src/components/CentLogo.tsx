@@ -1,8 +1,8 @@
 import React from 'react';
 export const CentLogo = ({ size = 100 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FFD700" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
-    <circle cx="12" cy="12" r="2" fill="#FFD700" />
+  <svg width={size} height={size} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="90" fill="black" stroke="#FFD700" strokeWidth="4"/>
+    <text x="50%" y="68%" textAnchor="middle" fontSize="130" fontWeight="bold" fill="#FFD700" style={{ fontFamily: 'serif' }}>C</text>
+    <circle cx="150" cy="60" r="5" fill="#FFD700" className="animate-ping" />
   </svg>
 );
