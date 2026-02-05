@@ -22,12 +22,10 @@ jobs:
       - name: Install Capacitor CLI
         run: npm install @capacitor/cli @capacitor/core @capacitor/android
         
-      - name: Add Android Platform
-        run: npx cap add android || echo "Android platform already exists"
-        
-      - name: Copy Web Assets to Android
-        run: npx cap copy android
-        
+      - name: Clean and Update Android
+        run: |
+          npx cap sync android
+          
       - name: Build APK
         run: |
           cd android
