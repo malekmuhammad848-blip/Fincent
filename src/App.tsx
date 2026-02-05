@@ -8,16 +8,16 @@ import SettingsScreen from './screens/SettingsScreen';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden flex flex-col">
+    <div className="fixed inset-0 bg-black text-white flex flex-col overflow-hidden">
       <Router>
-        <div className="flex-1 overflow-y-auto pb-24">
+        <main className="flex-1 overflow-y-auto pb-24">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/search" element={<SearchScreen />} />
             <Route path="/library" element={<LibraryScreen />} />
             <Route path="/settings" element={<SettingsScreen />} />
           </Routes>
-        </div>
+        </main>
         <BottomNav />
       </Router>
     </div>

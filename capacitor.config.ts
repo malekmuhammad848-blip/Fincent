@@ -3,8 +3,6 @@ const config: CapacitorConfig = {
   appId: 'com.malek.fincent',
   appName: 'Cent',
   webDir: 'dist',
-  plugins: {
-    BackgroundAudio: { enable: true }
-  }
+  server: { androidScheme: 'https' }
 };
 export default config;

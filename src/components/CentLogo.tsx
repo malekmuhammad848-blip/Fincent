@@ -1,16 +1,8 @@
 import React from 'react';
-const CentLogo = ({ size = 100 }) => (
-  <svg width={size} height={size} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#D4AF37" />
-        <stop offset="50%" stopColor="#FFD700" />
-        <stop offset="100%" stopColor="#B8860B" />
-      </linearGradient>
-    </defs>
-    <circle cx="100" cy="100" r="90" fill="black" stroke="url(#gold)" strokeWidth="4"/>
-    <text x="50%" y="68%" textAnchor="middle" fontSize="130" fontWeight="bold" fill="url(#gold)" style={{ fontFamily: 'serif' }}>C</text>
-    <circle cx="150" cy="60" r="5" fill="#FFD700" className="animate-ping" />
+export const CentLogo = ({ size = 100 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FFD700" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+    <circle cx="12" cy="12" r="2" fill="#FFD700" />
   </svg>
 );
-export default CentLogo;
