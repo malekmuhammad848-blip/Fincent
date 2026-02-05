@@ -1,9 +1,10 @@
-import type { CapacitorConfig } from '@capacitor/cli';
-
+import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
-  appId: 'com.cent.app',
-  appName: 'Cent App',
-  webDir: 'dist'
+  appId: 'com.malek.fincent',
+  appName: 'Cent',
+  webDir: 'dist',
+  plugins: {
+    BackgroundAudio: { enable: true }
+  }
 };
-
 export default config;
