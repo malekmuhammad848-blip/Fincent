@@ -1,4 +1,4 @@
-export const playMusic = (title: string, artist: string, url: string) => {
+export const playTrack = (title: string, artist: string, url: string) => {
   const audio = new Audio(url);
   audio.play();
 
