@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useSettingsStore } from './store/settingsStore';
 import BottomNav from './components/BottomNav';
 import HomeScreen from './screens/HomeScreen';
 import SearchScreen from './screens/SearchScreen';
@@ -8,17 +7,17 @@ import LibraryScreen from './screens/LibraryScreen';
 import SettingsScreen from './screens/SettingsScreen';
 
 function App() {
-  const { theme } = useSettingsStore();
-
   return (
-    <div className={`min-h-[100vh] ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'} pb-20`}>
+    <div className="min-h-screen bg-black text-white overflow-hidden flex flex-col">
       <Router>
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/search" element={<SearchScreen />} />
-          <Route path="/library" element={<LibraryScreen />} />
-          <Route path="/settings" element={<SettingsScreen />} />
-        </Routes>
+        <div className="flex-1 overflow-y-auto pb-24">
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
+            <Route path="/search" element={<SearchScreen />} />
+            <Route path="/library" element={<LibraryScreen />} />
+            <Route path="/settings" element={<SettingsScreen />} />
+          </Routes>
+        </div>
         <BottomNav />
       </Router>
     </div>
